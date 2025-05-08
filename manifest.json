@@ -1,26 +1,22 @@
-
 {
-  "name": "Vehicle Document Expiry Donut",
-  "description": "Half-donut chart for vehicle document types with expiry filtering",
-  "author": "Your Name",
-  "organization": "Your Organization",
-  "version": "1.0",
-  "components": [
-    {
-      "id": "vehicle-doc-donut",
-      "file": "index.html"
-    }
-  ],
-  "style": "style.css",
-  "scripts": ["script.js"],
-  "icon": "icon.png",
-  "config": {
-    "data": {
+  "dataStudio": {
+    "name": "Vehicle Document Expiry Donut",
+    "description": "Half-donut chart for vehicle document types with expiry filtering",
+    "author": "Your Name",
+    "organization": "Your Organization",
+    "version": "1.0",
+    "components": [
+      {
+        "id": "vehicle-doc-donut",
+        "file": "index.html"
+      }
+    ],
+    "style": "style.css",
+    "scripts": ["script.js"],
+    "icon": "icon.png",
+    "config": {
       "dimensions": ["doc_type"],
-      "metrics": ["expiry_date"]
-    },
-    "style": {
-      "theme": "dark"
+      "metrics": ["expiry_days"]
     }
   }
 }
